@@ -1,0 +1,11 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+* {
+  scroll-behavior: smooth;
+}
