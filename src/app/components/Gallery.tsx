@@ -3,43 +3,58 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 
 const galleryImages = [
   {
-    src: 'https://images.unsplash.com/photo-1753161021164-b075e15e91b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB0YWlsb3IlMjBtZWFzdXJpbmclMjBjbGllbnQlMjBib3V0aXF1ZXxlbnwxfHx8fDE3ODI1NDEwOTl8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnHJZQ_m_xWVgsDZk0IBprsZXGZfPP-hcFolYpLqlXHQ&s=10',
     alt: 'Tailor measuring client',
     span: 'row-span-2',
   },
   {
-    src: 'https://images.unsplash.com/photo-1756267317751-3b740c2f6840?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBmYWJyaWMlMjBzZWxlY3Rpb24lMjBkZXNpZ25lcnxlbnwxfHx8fDE3ODI1NDEwOTl8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ44PqxzbyqFfebMb-iQaQ4seBB1XFWI3F9t229dLi1pw&s',
     alt: 'Premium fabric selection',
     span: '',
   },
   {
-    src: 'https://images.unsplash.com/photo-1606501126768-b78d4569d3f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzZXdpbmclMjBtYWNoaW5lJTIwdGhyZWFkJTIwY3JhZnRzbWFuc2hpcHxlbnwxfHx8fDE3ODI1NDExMDJ8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9E98uoVbvhBWUBJRIxVJgEkdttn-fVuIzCRiw5N2owQ&s=10',
     alt: 'Sewing craftsmanship',
     span: '',
   },
   {
-    src: 'https://images.unsplash.com/photo-1622277430358-f4d134452e2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbGVnYW50JTIwYnJpZGFsJTIwd2VkZGluZyUyMGRyZXNzfGVufDF8fHx8MTc4MjU0MTEwMHww&ixlib=rb-4.1.0&q=80&w=1080',
+    src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkmk5CZrO4cboUiw2Pn9vwgNKY44FWlbeVAKXpcqjW4g&s=10',
     alt: 'Bridal wear',
     span: 'row-span-2',
   },
   {
-    src: 'https://images.unsplash.com/photo-1778731660238-f6abf7f436b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZXNpZ25lciUyMGJvdXRpcXVlJTIwaW50ZXJpb3IlMjBsdXh1cnl8ZW58MXx8fHwxNzgyNTQxMTAxfDA&ixlib=rb-4.1.0&q=80&w=1080',
+    src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToSnjDuzGuvWehzi1ff8rtk6Mb_PREzWT6MYlQEVXWLQ&s=10',
     alt: 'Boutique interior',
     span: '',
   },
   {
-    src: 'https://images.unsplash.com/photo-1760532467646-b9e466403862?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b21lbnMlMjBkZXNpZ25lciUyMGRyZXNzJTIwZWxlZ2FudHxlbnwxfHx8fDE3ODI1NDExMDJ8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6yIjQBUZBRp--uo31mjNBEXX_CDyj5kgusfJ2fnIYDg&s=10',
     alt: 'Designer dress',
     span: '',
   },
   {
-    src: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZW5zJTIwY3VzdG9tJTIwc3VpdCUyMHRhaWxvcmluZ3xlbnwxfHx8fDE3ODI1NDExMDF8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDr8M_BQ8BBJGOWz_AQk-VIXxvcqI77GAJgB0zvHdm3g&s=10',
     alt: 'Custom suits',
     span: 'col-span-2',
   },
   {
-    src: 'https://images.unsplash.com/photo-1636226570637-3fbda7ca09dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcmVtaXVtJTIwYm91dGlxdWUlMjB3b3Jrc3BhY2UlMjBzdHVkaW98ZW58MXx8fHwxNzgyNTQxMTA0fDA&ixlib=rb-4.1.0&q=80&w=1080',
+    src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGYqb6bC8U7GtbG7zGuS726pwCjmPaA0vuPO1RmDib6g&s=10',
     alt: 'Boutique workspace',
+    span: '',
+  },
+  {
+    src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMUGexbb4QSuJaHjqTzU2AJaTeGArgbntYL6ZWnUuQag&s=10',
+    alt: 'Premium stitching details',
+    span: '',
+  },
+  {
+    src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnwVDCdQjwbHXR1mLse3FAkcmPSFgaX8Le7xj1Zijh7g&s=10',
+    alt: 'Tailoring finishing touches',
+    span: '',
+  },
+  {
+    src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_sXpYZ4gp3xnurGVT7pFEUvBPp-Im7yscd21NXI_Uxg&s=10',
+    alt: 'Bespoke design creation',
     span: '',
   },
 ];

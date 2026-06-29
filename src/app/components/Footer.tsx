@@ -112,14 +112,9 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <Phone size={18} className="mt-1 flex-shrink-0" style={{ color: '#D4AF37' }} />
-                <div>
-                  <p className="text-sm opacity-70" style={{ color: 'white' }}>
-                    +91 98765 43210
-                  </p>
-                  <p className="text-sm opacity-70" style={{ color: 'white' }}>
-                    +91 87654 32109
-                  </p>
-                </div>
+                <p className="text-sm opacity-70" style={{ color: 'white' }}>
+                  +91 8910316410
+                </p>
               </li>
               <li className="flex items-start gap-3">
                 <Mail size={18} className="mt-1 flex-shrink-0" style={{ color: '#D4AF37' }} />
@@ -130,9 +125,13 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="mt-1 flex-shrink-0" style={{ color: '#D4AF37' }} />
                 <p className="text-sm opacity-70" style={{ color: 'white' }}>
-                  123 Fashion Street,
+                  CE-23, JYANGRA CHOWMATHA,
                   <br />
-                  Designer Lane, City - 400001
+                  RAJARHAT MAIN ROAD,
+                  <br />
+                  KOLKATA - 700059
+                  <br />
+                  (NEAR LOKENATH MANDIR, CHINARPARK)
                 </p>
               </li>
               <li className="flex items-start gap-3">
