@@ -4,44 +4,52 @@ import { ArrowRight } from 'lucide-react';
 
 const services = [
   {
-    title: "Men's Tailoring",
-    description: 'Custom suits, shirts, and formal wear tailored to perfection',
-    image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZW5zJTIwY3VzdG9tJTIwc3VpdCUyMHRhaWxvcmluZ3xlbnwxfHx8fDE3ODI1NDExMDF8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    title: 'Designer Blouse Stitching',
+    description: 'Custom-designed blouses crafted with precision, perfect fitting, and premium finishing for every occasion.',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl1mKbkNzxKSDGcLExI7zg--Oab52hxd6Ovn5ogcqh1TFwydUb',
+    alt: 'Elegant designer blouse stitching with premium detailing'
   },
   {
-    title: "Women's Tailoring",
-    description: 'Designer sarees, suits, and ethnic wear stitched with elegance',
-    image: 'https://images.unsplash.com/photo-1760532467646-b9e466403862?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b21lbnMlMjBkZXNpZ25lciUyMGRyZXNzJTIwZWxlZ2FudHxlbnwxfHx8fDE3ODI1NDExMDJ8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    title: 'Bridal Lehenga Tailoring',
+    description: 'Luxury bridal lehenga stitching with handcrafted detailing and flawless finishing.',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZueeqe9FUGvEbcbNcTCx3KPhwWpoY_CnKSpKLcYX_tF0TbO54',
+    alt: 'Luxury bridal lehenga tailoring showing handcrafted embroidery'
   },
   {
-    title: 'Bridal Wear',
-    description: 'Exquisite bridal lehengas and wedding outfits for your special day',
-    image: 'https://images.unsplash.com/photo-1622277430358-f4d134452e2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbGVnYW50JTIwYnJpZGFsJTIwd2VkZGluZyUyMGRyZXNzfGVufDF8fHx8MTc4MjU0MTEwMHww&ixlib=rb-4.1.0&q=80&w=1080',
+    title: 'Indo-Western Designer Wear',
+    description: 'Elegant Indo-Western outfits tailored with modern silhouettes and premium craftsmanship.',
+    image: 'https://images.cbazaar.com/images/yellow-chinon-silk-zari-embroidered-sequins-with-beads-work-indowestern-jacket-palazzo-set-iwsuscc573910051-u.jpg',
+    alt: 'Modern Indo-Western designer jacket and palazzo outfit'
   },
   {
-    title: 'Designer Blouse',
-    description: 'Intricate blouse designs with premium embellishments',
-    image: 'https://images.unsplash.com/photo-1756267317751-3b740c2f6840?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBmYWJyaWMlMjBzZWxlY3Rpb24lMjBkZXNpZ25lcnxlbnwxfHx8fDE3ODI1NDEwOTl8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    title: 'Custom Kurta & Jacket Set',
+    description: 'Premium kurta and jacket tailoring for weddings, festivals, and special occasions.',
+    image: 'https://asopalav.com/cdn/shop/files/pmnel2186d-off-white-silk-jodhpuri-kurta-set-with-multi-colored-thread-embroidery-work-jacket-set_25fcf939-97bc-4d8d-a000-618215ce406a.webp?v=1748348995',
+    alt: 'Custom tailored off-white silk Jodhpuri kurta set and embroidered jacket'
   },
   {
-    title: 'Custom Suits',
-    description: 'Bespoke three-piece suits crafted for the modern gentleman',
-    image: 'https://images.unsplash.com/photo-1521485878586-6b92b0c3641c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBmYXNoaW9uJTIwYWx0ZXJhdGlvbnMlMjBwcm9mZXNzaW9uYWx8ZW58MXx8fHwxNzgyNTQxMTAzfDA&ixlib=rb-4.1.0&q=80&w=1080',
+    title: 'Luxury Bridal Gown Stitching',
+    description: 'Exclusive bridal gowns tailored with elegance, comfort, and attention to every detail.',
+    image: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGzB72GiM2_95c4f82aIZ4l7770T4Oydzth9Xstw3__alXR95L',
+    alt: 'Stunning luxury bridal gown with customized styling and veil'
   },
   {
-    title: 'Alteration Services',
-    description: 'Expert alterations to ensure your garments fit flawlessly',
-    image: 'https://images.unsplash.com/photo-1503792501406-2c40da09e1e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWFzdXJpbmclMjB0YXBlJTIwc2Npc3NvcnMlMjB0YWlsb3IlMjB0b29sc3xlbnwxfHx8fDE3ODI1NDExMDR8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    title: 'Designer Palazzo Suit',
+    description: 'Beautiful palazzo suit stitching with contemporary cuts and premium finishing.',
+    image: 'https://5.imimg.com/data5/SELLER/Default/2026/6/616983521/YB/CY/SF/102721331/megha-fashion-plazzo-set-1.png',
+    alt: 'Chic designer palazzo suit with matching pattern and premium fabric'
   },
   {
-    title: 'Uniform Stitching',
-    description: 'Professional corporate and school uniform tailoring',
-    image: 'https://images.unsplash.com/photo-1578353022142-09264fd64295?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiZXNwb2tlJTIwdGFpbG9yaW5nJTIwc2V3aW5nJTIwY3JhZnRzbWFuc2hpcHxlbnwxfHx8fDE3ODI1NDExMDB8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    title: 'Designer Anarkali Dress',
+    description: 'Elegant Anarkali tailoring with luxurious fabrics and handcrafted finishing.',
+    image: 'https://folksana.in/wp-content/uploads/2024/03/MAHOGANY-3-scaled.jpeg',
+    alt: 'Premium designer Anarkali suit with gold work and elegant flow'
   },
   {
-    title: 'Home Tailoring Service',
-    description: 'Complete tailoring service at the comfort of your doorstep',
-    image: 'https://images.unsplash.com/photo-1778731660238-f6abf7f436b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZXNpZ25lciUyMGJvdXRpcXVlJTIwaW50ZXJpb3IlMjBsdXh1cnl8ZW58MXx8fHwxNzgyNTQxMTAxfDA&ixlib=rb-4.1.0&q=80&w=1080',
+    title: "Men's Kurta & Ethnic Wear",
+    description: 'Premium ethnic wear tailored for weddings, festivals, and formal celebrations.',
+    image: 'https://rukminim2.flixcart.com/image/1536/1536/xif0q/ethnic-set/d/o/b/44-punjabi-03-riddhiman-fashion-original-imahhxu6suwtjwjb.jpeg?q=90',
+    alt: "Bespoke men's traditional ethnic wear and kurta set"
   },
 ];
 
@@ -58,7 +66,7 @@ export function Services() {
             transition={{ duration: 0.6 }}
           >
             <div className="inline-block mb-4 px-4 py-2 rounded-full border" style={{ borderColor: '#D4AF37' }}>
-              <p className="text-sm tracking-widest" style={{ color: '#D4AF37' }}>
+              <p className="text-sm tracking-widest font-semibold" style={{ color: '#D4AF37' }}>
                 OUR SERVICES
               </p>
             </div>
@@ -73,13 +81,13 @@ export function Services() {
               Tailoring Excellence for Every Occasion
             </h2>
             <p className="text-lg max-w-2xl mx-auto opacity-70" style={{ color: '#1a1a1a' }}>
-              From bespoke suits to bridal couture, we offer comprehensive tailoring services crafted with precision
+              Redefining luxury fashion through bespoke stitching, customized bridal wear, and premium ethnic tailoring.
             </p>
           </motion.div>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
@@ -87,35 +95,36 @@ export function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.05 }}
-              className="group cursor-pointer"
+              className="group cursor-pointer h-full flex"
             >
-              <div className="relative overflow-hidden rounded-xl shadow-md hover:shadow-2xl transition-all duration-500">
+              <div className="flex flex-col w-full bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-md hover:shadow-xl hover:border-[#D4AF37]/45 transition-all duration-500">
                 {/* Image */}
-                <div className="aspect-[3/4] overflow-hidden bg-gray-100">
+                <div className="relative aspect-[3/4] overflow-hidden bg-gray-50 rounded-t-2xl">
                   <ImageWithFallback
                     src={service.image}
-                    alt={service.title}
-                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                    alt={service.alt}
+                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                   />
                 </div>
 
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-100 group-hover:opacity-95 transition-opacity duration-300">
-                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                {/* Card Body */}
+                <div className="p-6 flex-1 flex flex-col justify-between bg-white">
+                  <div>
                     <h3
-                      className="mb-2 text-white"
-                      style={{ fontFamily: 'var(--font-serif)', fontSize: '1.5rem' }}
+                      className="mb-2 text-[#1a1a1a] group-hover:text-[#D4AF37] transition-colors duration-300"
+                      style={{ fontFamily: 'var(--font-serif)', fontSize: '1.25rem', fontWeight: 600 }}
                     >
                       {service.title}
                     </h3>
-                    <p className="text-sm text-white/80 mb-3">{service.description}</p>
-                    <div
-                      className="inline-flex items-center gap-2 text-sm group-hover:gap-3 transition-all"
-                      style={{ color: '#D4AF37' }}
-                    >
-                      Learn More
-                      <ArrowRight size={16} />
-                    </div>
+                    <p className="text-sm text-[#1a1a1a]/70 line-clamp-3 leading-relaxed">{service.description}</p>
+                  </div>
+                  
+                  <div
+                    className="inline-flex items-center gap-2 text-sm mt-5 font-semibold transition-all group-hover:text-[#D4AF37]"
+                    style={{ color: '#1a1a1a' }}
+                  >
+                    <span>Learn More</span>
+                    <ArrowRight size={16} className="transform group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>
               </div>
