@@ -46,7 +46,7 @@ export function Header() {
             <img
               src={trailorLogo}
               alt="Tailor On Call Logo"
-              className="h-12 w-auto object-contain rounded-md shadow-sm border border-black/10"
+              className="h-15 w-auto object-contain rounded-md shadow-sm border border-black/10"
             />
             
           </div>

@@ -2,6 +2,7 @@ import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { WhyChooseUs } from './components/WhyChooseUs';
 import { Services } from './components/Services';
+import { DressFromSaree } from './components/DressFromSaree';
 import { HowItWorks } from './components/HowItWorks';
 import { Gallery } from './components/Gallery';
 import { Craftsmanship } from './components/Craftsmanship';
@@ -19,6 +20,7 @@ export default function App() {
         <Hero />
         <WhyChooseUs />
         <Services />
+        <DressFromSaree />
         <HowItWorks />
         <Gallery />
         <Craftsmanship />
