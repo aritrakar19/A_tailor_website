@@ -4,7 +4,7 @@ import { Button } from './ui/button';
 
 import trailorLogo from '@/assets/trailorlogo.jpeg';
 
-export function Header() {
+export function Header({ currentPath, navigate, onOpenBooking }: { currentPath?: string; navigate?: (path: string) => void; onOpenBooking?: () => void }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -16,12 +16,38 @@ export function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+  const handleNavClick = (id: string) => {
+    if (id === 'gallery') {
+      if (navigate) {
+        navigate('/gallery');
+      } else {
+        window.history.pushState({}, '', '/gallery');
+        window.dispatchEvent(new PopStateEvent('popstate'));
+      }
       setIsMobileMenuOpen(false);
+      return;
     }
+
+    if (currentPath === '/gallery' || window.location.pathname === '/gallery') {
+      if (navigate) {
+        navigate('/');
+      } else {
+        window.history.pushState({}, '', '/');
+        window.dispatchEvent(new PopStateEvent('popstate'));
+      }
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 150);
+    } else {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+    setIsMobileMenuOpen(false);
   };
 
   const navItems = [
@@ -42,7 +68,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex-shrink-0 flex items-center gap-3 cursor-pointer" onClick={() => scrollToSection('hero')}>
+          <div className="flex-shrink-0 flex items-center gap-3 cursor-pointer" onClick={() => handleNavClick('hero')}>
             <img
               src={trailorLogo}
               alt="Tailor On Call Logo"
@@ -56,8 +82,12 @@ export function Header() {
             {navItems.map((item) => (
               <button
                 key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className="text-sm tracking-wide transition-colors hover:opacity-70"
+                onClick={() => handleNavClick(item.id)}
+                className={`text-sm tracking-wide transition-all duration-200 hover:opacity-70 ${
+                  (item.id === 'gallery' && (currentPath === '/gallery' || window.location.pathname === '/gallery')) 
+                    ? 'font-bold border-b border-black' 
+                    : ''
+                }`}
                 style={{ color: '#1a1a1a', fontFamily: 'var(--font-sans)' }}
               >
                 {item.label}
@@ -68,7 +98,7 @@ export function Header() {
           {/* CTA Button - Desktop */}
           <div className="hidden md:block">
             <Button
-              onClick={() => scrollToSection('contact')}
+              onClick={onOpenBooking || (() => handleNavClick('contact'))}
               className="px-6 py-2.5 text-sm tracking-wide transition-all hover:scale-105"
               style={{
                 backgroundColor: '#1a1a1a',
@@ -97,15 +127,19 @@ export function Header() {
             {navItems.map((item) => (
               <button
                 key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className="block w-full text-left py-2 text-base"
+                onClick={() => handleNavClick(item.id)}
+                className={`block w-full text-left py-2 text-base ${
+                  (item.id === 'gallery' && (currentPath === '/gallery' || window.location.pathname === '/gallery')) 
+                    ? 'font-bold text-[#D4AF37]' 
+                    : ''
+                }`}
                 style={{ color: '#1a1a1a', fontFamily: 'var(--font-sans)' }}
               >
                 {item.label}
               </button>
             ))}
             <Button
-              onClick={() => scrollToSection('contact')}
+              onClick={onOpenBooking || (() => handleNavClick('contact'))}
               className="w-full mt-4 py-2.5"
               style={{
                 backgroundColor: '#1a1a1a',

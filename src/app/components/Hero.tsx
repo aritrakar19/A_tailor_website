@@ -3,7 +3,7 @@ import { Button } from './ui/button';
 import { Scissors, Ruler } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
-export function Hero() {
+export function Hero({ onOpenBooking }: { onOpenBooking?: () => void }) {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -76,7 +76,7 @@ export function Hero() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
-                onClick={() => scrollToSection('contact')}
+                onClick={onOpenBooking || (() => scrollToSection('contact'))}
                 className="px-8 py-6 text-base sm:text-lg transition-all hover:scale-105 shadow-xl"
                 style={{
                   backgroundColor: '#D4AF37',

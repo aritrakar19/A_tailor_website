@@ -3,9 +3,29 @@ import trailorLogo from '@/assets/trailorlogo.jpeg';
 
 export function Footer() {
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    if (id === 'gallery') {
+      window.history.pushState({}, '', '/gallery');
+      window.dispatchEvent(new PopStateEvent('popstate'));
+      window.scrollTo(0, 0);
+      return;
+    }
+
+    const targetId = id === 'home' ? 'hero' : id;
+
+    if (window.location.pathname === '/gallery') {
+      window.history.pushState({}, '', '/');
+      window.dispatchEvent(new PopStateEvent('popstate'));
+      setTimeout(() => {
+        const element = document.getElementById(targetId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 150);
+    } else {
+      const element = document.getElementById(targetId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   };
 
@@ -15,7 +35,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand Column */}
           <div>
-            <div className="flex items-center gap-3 mb-4 cursor-pointer" onClick={() => scrollToSection('hero')}>
+            <div className="flex items-center gap-3 mb-4 cursor-pointer" onClick={() => scrollToSection('home')}>
               <img
                 src={trailorLogo}
                 alt="Tailor On Call Logo"
@@ -70,11 +90,11 @@ export function Footer() {
               Quick Links
             </h4>
             <ul className="space-y-3">
-              {['Home', 'About', 'Services', 'Gallery', 'Testimonials'].map((item) => (
+              {['Home', 'Services', 'Gallery', 'Testimonials'].map((item) => (
                 <li key={item}>
                   <button
                     onClick={() => scrollToSection(item.toLowerCase())}
-                    className="opacity-70 hover:opacity-100 transition-opacity text-sm"
+                    className="opacity-70 hover:opacity-100 transition-opacity text-sm text-left cursor-pointer"
                     style={{ color: 'white' }}
                   >
                     {item}
@@ -119,7 +139,7 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <Mail size={18} className="mt-1 flex-shrink-0" style={{ color: '#D4AF37' }} />
                 <p className="text-sm opacity-70" style={{ color: 'white' }}>
-                  info@tailoroncall.com
+                  Khushbusingh78095@gmail.com
                 </p>
               </li>
               <li className="flex items-start gap-3">
