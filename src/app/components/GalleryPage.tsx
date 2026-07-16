@@ -10,6 +10,16 @@ import saree5 from '../../assets/dress-from-saree/saree-5.png';
 import saree6 from '../../assets/dress-from-saree/saree-6.png';
 // import trailorLogo from '../../assets/trailorlogo.jpeg';
 
+import img1 from '../../assets/img1.jpeg';
+import img2 from '../../assets/img2.jpeg';
+import img3 from '../../assets/img3.jpeg';
+import img4 from '../../assets/img4.jpeg';
+import img6 from '../../assets/img6.jpeg';
+import img7 from '../../assets/img7.jpeg';
+import img8 from '../../assets/img8.jpeg';
+import img9 from '../../assets/img9.jpeg';
+import img10 from '../../assets/img10.jpeg';
+
 interface GalleryImage {
   src: string;
   alt: string;
@@ -55,6 +65,30 @@ const galleryImages: GalleryImage[] = [
     title: 'Modern Designer Dress',
     category: 'Saree Transformations',
   },
+  {
+    src: img3,
+    alt: 'A modern, sophisticated shirt-style long dress with a matching belt, tailored from rich purple silk featuring gold floral motifs.',
+    title: 'Amethyst Silk Shirt Dress',
+    category: 'Saree Transformations',
+  },
+  {
+    src: img7,
+    alt: 'Traditional-style red and gold Banarasi flared dress with a rich green border and a classic V-neckline.',
+    title: 'Traditional Banarasi Flare Dress',
+    category: 'Saree Transformations',
+  },
+  {
+    src: img8,
+    alt: 'Elegant cream and ivory silk long jacket dress with rich red and gold borders, perfect for contemporary festive styling.',
+    title: 'Ivory Silk Cape & Jacket Dress',
+    category: 'Saree Transformations',
+  },
+  {
+    src: img10,
+    alt: 'Beautiful emerald green three-piece sharara set featuring detailed gold embroidery on the neck and sleeves with a matching dupatta.',
+    title: 'Emerald Green Embroidered Sharara Set',
+    category: 'Saree Transformations',
+  },
   
   // Premium Bespoke Suits
   {
@@ -81,6 +115,12 @@ const galleryImages: GalleryImage[] = [
     title: 'Tailored Wool Overcoat',
     category: 'Bespoke Suits',
   },
+  {
+    src: img9,
+    alt: "Modern women's bespoke pantsuit crafted from rich magenta and gold floral brocade fabric, featuring sharp tailoring and flared trousers.",
+    title: 'Pink Brocade Blazer Pantsuit',
+    category: 'Bespoke Suits',
+  },
 
   // Bridal & Gowns
   {
@@ -95,12 +135,30 @@ const galleryImages: GalleryImage[] = [
     title: 'Draped Corset Evening Dress',
     category: 'Bridal & Gowns',
   },
-  // {
-  //   src: trailorLogo,
-  //   alt: 'Delicate lace detailing on a customized ivory wedding dress veil and train.',
-  //   title: 'Intricate Bridal Lace Work',
-  //   category: 'Bridal & Gowns',
-  // },
+  {
+    src: img1,
+    alt: 'Back view of a custom bridal blouse in rich red silk, showcasing detailed hand-embroidered gold zardozi work and an elegant cutout back pattern.',
+    title: 'Royal Crimson Bridal Blouse (Back View)',
+    category: 'Bridal & Gowns',
+  },
+  {
+    src: img2,
+    alt: 'Elegant blossom pink and gold halter neck gown with beautiful floral brocade patterns and a tailored silhouette.',
+    title: 'Blossom Pink Halter Gown',
+    category: 'Bridal & Gowns',
+  },
+  {
+    src: img4,
+    alt: 'Front view of a custom crimson silk bridal blouse, featuring intricate gold hand-embroidery along the neck and sleeves.',
+    title: 'Royal Crimson Bridal Blouse (Front View)',
+    category: 'Bridal & Gowns',
+  },
+  {
+    src: img6,
+    alt: 'Royal blue and gold embroidered long jacket style gown featuring rich zari embroidery and sophisticated detailing.',
+    title: 'Royal Blue & Gold Indo-Western Gown',
+    category: 'Bridal & Gowns',
+  },
 
   // Craftsmanship
   {
@@ -114,19 +172,7 @@ const galleryImages: GalleryImage[] = [
     alt: 'Heavy-duty vintage sewing machine executing a precise line on premium fabric.',
     title: 'Exquisite Stitching Work',
     category: 'Craftsmanship',
-  },
-    // {
-    //   src: trailorLogo,
-    //   alt: 'A curated selection of high-end Italian silk fabrics, gold brocades, and thread spools.',
-    //   title: 'Premium Thread & Fabrics',
-    //   category: 'Craftsmanship',
-    // },
-  // {
-  //   src: trailorLogo,
-  //   alt: 'Measuring tape draped over the shoulders of a premium tailoring mannequin draped in dark silk.',
-  //   title: 'Bespoke Measurement Art',
-  //   category: 'Craftsmanship',
-  // }
+  }
 ];
 
 export function GalleryPage() {
